@@ -4,5 +4,23 @@
     box-sizing: border-box;
 }
 body{
+   background:linear-gradient(to top, rgba(0, 0, 0, 0.274), white); 
+   width: 100vw;
+   height: 100vh;
+}
+
+header{
+    width: 100vw;
+    height: 65px;
+    background-color: rgb(154, 156, 156);
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+#sepa{
+    border: solid rgb(109, 107, 107) 1px;
+}
+#titulo{
+    font-family: monospace;
     
 }
