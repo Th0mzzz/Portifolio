@@ -4,23 +4,47 @@
     box-sizing: border-box;
 }
 body{
-   background:linear-gradient(to top, rgba(0, 0, 0, 0.274), white); 
    width: 100vw;
    height: 100vh;
+   overflow: hidden;
+   background:linear-gradient(to bottom, rgb(20, 20, 20),rgb(30, 30, 30)); 
 }
+
 
 header{
     width: 100vw;
     height: 65px;
-    background-color: rgb(154, 156, 156);
+    background-color: rgb(20, 20, 20);
     display: flex;
     align-items: center;
     padding: 2rem;
 }
-#sepa{
-    border: solid rgb(109, 107, 107) 1px;
-}
 #titulo{
     font-family: monospace;
+    
+}
+#menu-itens{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-family: monospace;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+#menu-itens li{
+    color: white;
+    transition: all ease-in-out .2s;
+
+}
+#menu-itens li:hover{
+    color: rgb(255, 118, 118);
+    
+}
+#image{
+    height:25rem;
+    width: 100%;
     
 }
