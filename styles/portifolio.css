@@ -9,18 +9,19 @@ body{
    height: 100vh;
    overflow-x: hidden;
    
-   background:linear-gradient(to bottom, rgb(20, 20, 20),rgb(30, 30, 30)); 
+   background-image: url(imgs/landscape-g7070b5d84_1280.png);
 }
 
 
 header{
     width: 100vw;
     height: 65px;
-    background-color: rgb(20, 20, 20);
+    background-color: rgba(20, 20, 20, 0.589);
     display: flex;
     align-items: center;
     padding: 2rem;
 }
+
 #titulo{
     font-family: monospace;
     
@@ -48,43 +49,54 @@ header{
 
 #image{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 3rem;
+    padding: 1rem;
     width: 100%;
-    height: auto;
+    height: 700px;
     margin-top: .5rem; 
     
 }
-#image img{ 
-    width: 100%;
-    height: 42rem;
-    object-fit: cover;   
-}
+
 
 #sobremim{
     background:linear-gradient(to top, rgba(37, 37, 37, 0.233), rgba(29, 29, 29, 0.753));
     border-radius: 20px;
     padding: 1rem;
-    width: 28rem; 
+    width: 45%; 
     height:20rem;
-    position: absolute;
-    top: 35%;
-    left: 5%;
     font-size: 16px;
     color: white;
-
+    margin-right: 10%;
 }
 
 #Nome{
     background:linear-gradient(to left, rgba(37, 37, 37, 0.233), rgba(29, 29, 29, 0.753));
     border-radius: 20px;
     padding: 1rem;
-    position: absolute;
-    top: 15%;
-    left: 4%;
-    font-size: 4rem;
+    width:fit-content;
+    font-size: 3.5rem;
     color: white;
     transition: all ease-in-out .2s;
 }
 #Nome:hover{
     background-color: rgba(0, 0, 0, 0.774);
     color: rgb(255, 83, 83);
+}
+#foto{
+    
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    box-shadow: 3px 3px 5px black;
+}
+#foto img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
 }
