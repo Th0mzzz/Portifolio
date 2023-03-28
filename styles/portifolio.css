@@ -8,24 +8,37 @@ body{
    width: 100vw;
    height: 100vh;
    overflow-x: hidden;
-   
    background-image: url(imgs/landscape-g7070b5d84_1280.png);
+   background-size:100%;
+
 }
 
 
 header{
+   
+    
     width: 100vw;
     height: 65px;
     background-color: rgba(20, 20, 20, 0.589);
     display: flex;
     align-items: center;
     padding: 2rem;
+    
 }
 
 #titulo{
     font-family: monospace;
-    
+    color: rgb(255, 118, 118);
+    cursor: pointer;
+    font-size: 25px;
+    transition: all ease-in-out .2s;
 }
+#titulo:hover{ 
+    color: white;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
 #menu-itens{
     width: 100%;
     list-style: none;
@@ -43,7 +56,9 @@ header{
 
 }
 #menu-itens li:hover{
+    font-size: 28px;
     color: rgb(255, 118, 118);
+   
     
 }
 
@@ -61,30 +76,6 @@ header{
 }
 
 
-#sobremim{
-    background:linear-gradient(to top, rgba(37, 37, 37, 0.233), rgba(29, 29, 29, 0.753));
-    border-radius: 20px;
-    padding: 1rem;
-    width: 45%; 
-    height:20rem;
-    font-size: 16px;
-    color: white;
-    margin-right: 10%;
-}
-
-#Nome{
-    background:linear-gradient(to left, rgba(37, 37, 37, 0.233), rgba(29, 29, 29, 0.753));
-    border-radius: 20px;
-    padding: 1rem;
-    width:fit-content;
-    font-size: 3.5rem;
-    color: white;
-    transition: all ease-in-out .2s;
-}
-#Nome:hover{
-    background-color: rgba(0, 0, 0, 0.774);
-    color: rgb(255, 83, 83);
-}
 #foto{
     
     width: 500px;
@@ -94,9 +85,20 @@ header{
     top: 5%;
     left: 5%;
     box-shadow: 3px 3px 5px black;
+    transition: all ease-in-out .2s;
+}
+#foto:hover{
+    width: 510px;
+    height: 510px;
+
+}
+#foto img:hover{
+    width: 510px;
+    height: 510px;
 }
 #foto img{
     width: 500px;
     height: 500px;
     border-radius: 50%;
+    transition: all ease-in-out .2s;
 }
