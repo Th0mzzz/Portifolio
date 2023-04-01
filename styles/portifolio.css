@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; font-family: monospace;
 }
 body{
     width: 100vw;
@@ -10,8 +9,6 @@ body{
     overflow-x: hidden;
     background-image: url(imgs/space-5756194.png);
     background-size:100%;
-  
-
 }
 
 
@@ -23,24 +20,62 @@ header{
     background:linear-gradient(to bottom, rgb(20, 20, 20, 0.589), rgba(0, 0, 0, 0.041));
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     z-index: 1000;
     transition: all ease-in-out .2s;
     
+}
+#tel{
+   color: white;
+   font-family: monospace; 
+   width: 115px;
+}
+#curri{
+    position: absolute;
+    right: 50px; 
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+#curri:hover{
+    font-size: 23px;
+    color: lightskyblue;
 }
 
 ::-webkit-scrollbar{
     width: 8px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: lightskyblue;
+    background-color: lightgray;
     border-radius: 10px;
 }
 
+#contatos{
+    
+    list-style: none;
+    margin: 1rem;
+    display:flex;
+    gap: .6rem;
+    font-size: 20px;
+   
+}
 
+#contatos a{
+    color: white;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+#contatos a:hover{
+    color: lightskyblue;
+    font-size: 22px;
+    margin-left: .2rem;
+    margin-right: .2rem;
+   
+}
 
-#menu-itens{
-    width: 100%;
+#menu-itens{ 
+    width:60%;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -48,8 +83,6 @@ header{
     font-family: monospace;
     font-size: 20px;
     cursor: pointer;
-    overflow-x: hidden;
-    
 }
 #menu-itens li{
     color: white;
@@ -57,7 +90,7 @@ header{
 
 }
 #menu-itens li:hover{
-    font-size: 22px;
+    font-size: 21px;
     letter-spacing: 1px;
     margin-left: .5rem;
     margin-right: .5rem;
@@ -82,12 +115,10 @@ header{
     background-color: rgba(248, 248, 255, 0.9);
     position:relative;
     top: 60px;
-    border-radius: 20px;
+   
     
 }
-#sobremim h1{
-    margin-left: 1rem;
-}
+
 #mim{
     width: 50%;
     margin: 1rem;
