@@ -2,103 +2,96 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    
 }
 body{
-   width: 100vw;
-   height: 100vh;
-   overflow-x: hidden;
-   background-image: url(imgs/landscape-g7070b5d84_1280.png);
-   background-size:100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url(imgs/space-5756194.png);
+    background-size:100%;
+  
 
 }
 
 
 header{
-   
-    
+    position: fixed;
+    top: 0;
     width: 100vw;
     height: 65px;
-    background-color: rgba(20, 20, 20, 0.589);
+    background:linear-gradient(to bottom, rgb(20, 20, 20, 0.589), rgba(0, 0, 0, 0.041));
     display: flex;
     align-items: center;
-    padding: 2rem;
+    justify-content: center;
+    z-index: 1000;
+    transition: all ease-in-out .2s;
     
 }
 
-#titulo{
-    font-family: monospace;
-    color: rgb(255, 118, 118);
-    cursor: pointer;
-    font-size: 25px;
-    transition: all ease-in-out .2s;
+::-webkit-scrollbar{
+    width: 8px;
 }
-#titulo:hover{ 
-    color: white;
-    letter-spacing: 2px;
-    font-size: 28px;
+::-webkit-scrollbar-thumb{
+    background-color: lightskyblue;
+    border-radius: 10px;
 }
+
+
 
 #menu-itens{
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
     font-family: monospace;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
+    overflow-x: hidden;
     
 }
 #menu-itens li{
     color: white;
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out .3s;
 
 }
 #menu-itens li:hover{
-    font-size: 28px;
-    color: rgb(255, 118, 118);
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    color: lightskyblue;
    
     
 }
 
-#image{
-    position: relative;
+#separ{
+    position: relative; 
+    top: 64px;
+    width: 100vw;
+    height: 450px;
+    background:linear-gradient(to top, rgba(248, 248, 255, 0.164),rgba(248, 248, 255, 0));
+    z-index: -1;
+}
+#sobremim{
+    
+    width: 100%;
+    height: 20rem;
+    padding: 1.5rem;
+    background-color: rgba(248, 248, 255, 0.9);
+    position:relative;
+    top: 60px;
+    border-radius: 20px;
+    
+}
+#sobremim h1{
+    margin-left: 1rem;
+}
+#mim{
+    width: 50%;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    gap: 3rem;
-    padding: 1rem;
-    width: 100%;
-    height: 700px;
-    margin-top: .5rem; 
     
-}
-
-
-#foto{
-    
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    box-shadow: 3px 3px 5px black;
-    transition: all ease-in-out .2s;
-}
-#foto:hover{
-    width: 510px;
-    height: 510px;
-
-}
-#foto img:hover{
-    width: 510px;
-    height: 510px;
-}
-#foto img{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    transition: all ease-in-out .2s;
 }
