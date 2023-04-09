@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; font-family: monospace;
+    box-sizing: border-box; 
+    font-family: monospace;
 }
 body{
     width: 100vw;
@@ -30,24 +31,24 @@ header{
    color: white;
    font-family: monospace; 
    font-size: 12px;
-   width: 115px;
    display: flex;
    align-items: center;
    gap:5px;
 }
 #tel i{
     font-size: 20px;
+    
 }
 #curri{
     position: absolute;
     right: 50px; 
-    font-size: 21px;
+    font-size: 16px;
     color: white;
     cursor: pointer;
     transition: all ease-in-out .2s;
 }
 #curri:hover{
-    font-size: 23px;
+    font-size: 20px;
     color: lightskyblue;
 }
 
@@ -83,13 +84,13 @@ header{
 }
 
 #menu-itens{ 
-    width:60%;
+    width:70%;
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 #menu-itens li{
@@ -98,7 +99,7 @@ header{
 
 }
 #menu-itens li:hover{
-    font-size: 21px;
+    font-size: 17px;
     letter-spacing: 1px;
     margin-left: .5rem;
     margin-right: .5rem;
@@ -109,7 +110,7 @@ header{
 
 #separ{
     display: flex;
-    justify-content: center;
+    justify-content:center ;
     align-items: start;
     position: relative; 
     top: 64px;
@@ -122,9 +123,10 @@ header{
     color: white;
     font-size: 35px;
     margin: 1rem;
-    background-color: rgba(0, 0, 0, 0.342);
-    width: 256px;
-    height: 40px;
+    padding: 1rem;
+    
+    width: auto;
+    height: auto;
     text-align: center;
     border-radius: 15px;
     
@@ -136,17 +138,34 @@ header{
     width: 100%;
     height: 20rem;
     padding: 1.5rem;
-    background-color: rgba(248, 248, 255, 0.9);
+    background-color:rgba(245, 245, 245, 0.699);
     position:relative;
     top: 60px;
-   
+    border-top: solid 1px antiquewhite;
     
+}
+#sobremim hr{
+    color: antiquewhite;
 }
 
 #mim{
+    background-color: rgba(27, 27, 27, 0.7);
     width: 50%;
     margin: 1rem;
     display: flex;
+    padding: 1rem;
     flex-direction: column;
+    border-radius: 15px;
+    padding: 1rem;
+    
+}
+#mim h2{
+    color: lightskyblue;
+}
+.texto{
+    color: antiquewhite;
+}
+#Emprego-atual{
+    margin: 1rem;
     
 }
