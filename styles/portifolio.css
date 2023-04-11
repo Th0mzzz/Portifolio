@@ -150,6 +150,10 @@ header{
     padding: 2rem;
     background:linear-gradient(to bottom, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.459)) ;
 }
+#sobremim hr{
+    width: 50%;
+    margin-left:1rem;
+}
 #sobretit{ 
    font-size:31px;
    color:white;
@@ -174,4 +178,13 @@ header{
 }
 .texto{
     color: antiquewhite;
+    font-size: 16px;
+}
+.saturn{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 250px;
+    height: 150px;
+    z-index: 500;
 }
