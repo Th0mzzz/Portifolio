@@ -129,7 +129,9 @@ header{
     color: white;
 }
 #title p{
+    font-size: 20px;
     margin-left: .5rem;
+    color: lightskyblue;
 }
 #titulo{
     color: white;
