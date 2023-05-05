@@ -1,11 +1,16 @@
 #separ{
     margin-top: 64px;
     width: 100vw;
-    height: 450px;
+    height: 600px;
     z-index: -1;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 5%;
+    background-image:url(../imgs/stars-g85449b5bc_1280.png) ;
+    background-repeat: no-repeat;
+    background-size:100% ;
+    backdrop-filter:blur(10px);
 }
 #modos{
     display: flex;
@@ -20,73 +25,75 @@
     cursor: pointer;
     position: relative;
     left: -1000%;
+    overflow: hidden;
+    
 }
 
 .active{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 0;
 
 }
-#moon{
-    background-color: #993399;
+#escuro{
+    background:linear-gradient(to left, #5c1b5c,#993399);
+    box-shadow: 5px 5px 10px black;
 }
-#sun{
+#claro{
     background-color: lightskyblue;
+}
+
+.modo img{
+    width: 150%;
+    height: 150%;
 }
 
 #title{
     padding: 3rem;
     height: auto;
     color: white;
+    background: #0d0d0d;
+    border-radius: 50px;
 }
 #title p{
     font-size: 20px;
-    color: #993399;
+    color: gold;
 }
 #titulo{
     color: white;
     font-size: 35px;
     width: auto;
     height: auto;
-    border-radius: 15px;
-    
+    border-bottom:solid 1px #993399;
 }
 
 #sobremim{
-    position: absolute;
-    top: 600px;
-    display: flex;
-    flex-direction: column;
+   
     width: 100%;
     height: auto;
-    padding: 2rem;
-    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.459)) ;
-}
-#sobremim hr{
-    width: 50%;
-    margin-left:1rem;
+    padding: 3rem;
+    background:#0d0d0d;
+
 }
 #sobretit{ 
    font-size:31px;
    color:white;
-   margin: 1rem;
-   margin-left: 3rem;
+   
+   border-bottom:solid 2px #993399;
+   color: #993399;
+   width:50%;
 }
 
-#mim{
-    background-color: rgba(27, 27, 27, 0.7);
+#ola{
     width: 50%;
-    margin: 1rem;
     display: flex;
     padding: 2rem;
     flex-direction: column;
-    border-radius: 15px;
-    
-    
 }
-#mim h2{
+#ola h2{
     font-size: 25px;
-    color: lightskyblue;
+    color: gold;
 }
 .texto{
     color: antiquewhite;
