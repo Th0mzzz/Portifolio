@@ -8,34 +8,48 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/sobremim.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 </head>
-    <script src="scripts/portifolio.js" defer></script>
+    
 <body>
 
 
-
-    <header id="header">
-        <ul id="contatos">
-            <li><a href="https://github.com/Th0mzzz"></a></li> 
-            <li><a href="https://www.linkedin.com/in/thomaz-vasconcelos-mendes-027388268/"></a></li>  
-            <li><a href="https://instagram.com/th0mzzz?igshid=ZDdkNTZiNTM="></a></li>   
-            
-        </ul>
-        <ul id="menu-itens">
-            <li><a class="item">Sobre mim</a></li>
-            <li><a class="item">Habilidades</a></li>
-            <li><a class="item">Experiência</a></li>
-            <li><a class="item">Projetos</a></li>
-        </ul>
+    
+    <header id="header">    
+            <ul id="contatos">
+                <li class="redes">
+                    <a href="https://github.com/Th0mzzz"><i class="devicon-github-original"></i></a>                   
+                        
+                    </a></li> 
+                <li class="redes">
+                    <a href="https://www.linkedin.com/in/thomaz-vasconcelos-mendes-027388268/">                                     
+                        <i class="devicon-linkedin-plain"></i>       
+                     </a></li>
+            </ul>
+            <ul id="menu-itens">
+                <li><a class="item">Sobre mim</a></li>
+                <li><a class="item">Habilidades</a></li>
+                <li><a class="item">Experiência</a></li>
+                <li><a class="item">Projetos</a></li>
+            </ul>
     </header>
     
     <main id="main">
 
-        <section id="separ">
-        <div id="title">
-            <h1 id="titulo">Thomaz Vasconcelos Mendes<br></h1>
-            <p>Desenvolvedor Web - iniciante</p>
-        </div>
+        <section id="separ"> 
+
+            <div id="modos">
+                <div id="moon" class="modo active"><img   src="imgs/icons8-full-moon-64.png" alt=""></div>
+                <div id="sun" class="modo" ><img   src="imgs/icons8-sun-64.png" alt=""></div>
+            </div>
+
+            <div id="title">
+                <h1 id="titulo">Thomaz Vasconcelos Mendes<br></h1>
+                <p>Desenvolvedor Web - iniciante</p>
+            </div>
+
         </section>
         
         <section id="sobremim">
@@ -69,6 +83,7 @@
     <footer id="footer">
 
     </footer>
-
+    <script src="scripts/portifolio.js" defer></script>
+    <script src="scripts/mode.js" defer></script>
 </body>
 </html>

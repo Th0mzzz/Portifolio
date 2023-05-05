@@ -3,20 +3,45 @@
     width: 100vw;
     height: 450px;
     z-index: -1;
+    display: flex;
+    align-items: center;
+    padding: 5%;
 }
+#modos{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.modo{
+    display: none;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    left: -1000%;
+}
+
+.active{
+    display: block;
+    left: 0;
+
+}
+#moon{
+    background-color: #993399;
+}
+#sun{
+    background-color: lightskyblue;
+}
+
 #title{
-    position: absolute;
-    top: 30%;
     padding: 3rem;
-    width: 100%;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
 #title p{
     font-size: 20px;
-    margin-left: .5rem;
-    color: #FFDE59;
+    color: #993399;
 }
 #titulo{
     color: white;
