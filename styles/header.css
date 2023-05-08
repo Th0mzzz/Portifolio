@@ -68,3 +68,18 @@ header{
     transform:translateY(-5px) ;
 }
 
+#toggle-btn{
+    color:var(--cor-primaria);
+    border:solid 1px var(--cor-primaria);
+    background:transparent;
+    padding:2rem;
+}
+#toggle-btn:hover{
+    color:var(--cor-fundo);
+    
+    
+}
+
+@keyframes encherbarra{
+
+}
