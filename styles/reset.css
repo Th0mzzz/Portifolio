@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    background: #141414;
+    background:var(--cor-fundo);
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -18,9 +18,19 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background:#87cefa ;
+    background:var(--cor-primaria) ;
     border-radius: 10px;
 }
+
+
+:root{
+
+--cor-primaria:#87cefa ;
+--cor-secundaria:#ffffff ;
+--cor-fundo:#141414 ;
+
+}
+
 
 
 

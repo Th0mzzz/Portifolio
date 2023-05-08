@@ -20,6 +20,8 @@
     height: 350px;
     animation: flutando 2s infinite;
     transition: all ease-in-out .2s;
+    background: transparent;
+    
 }
 @keyframes flutando {
     0%{
@@ -32,22 +34,28 @@
         transform: translateY(0px);
     }
 }
-
+#cumprimento{
+    color: var(--cor-primaria);
+    letter-spacing: 5px;
+}
 #title{
     padding: 3rem;
     height: auto;
-    color: white;
+    color:var(--cor-secundaria);
     border-radius: 20px;
 }
 #title p{
+    font-family: monospace;
     font-size: 20px;
-    color: lightskyblue;
+    color: var(--cor-primaria);
+    letter-spacing: 5px;
 }
 #titulo{
-    color: white;
+    color:var(--cor-secundaria);
     font-size: 32px;
     width: auto;
     height: auto;
+    letter-spacing: 2px;
 }
 
 #sobremim{

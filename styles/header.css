@@ -5,7 +5,7 @@ header{
     height: 80px;
     display: flex;
     align-items: center;
-    background: #141414;
+    background:var(--cor-fundo);
     justify-content: space-around;
     z-index: 1000;
     transition: all ease-in-out .3s;
@@ -24,37 +24,20 @@ header{
     padding: 1rem 3rem 1rem 3rem;
   
 }
-.redes:hover{
-    animation: flutando 1s infinite;
-}
 .redes a{
     text-decoration: none;
 }
 
 .redes i{
     font-size: 25px;
-    color: white;
+    color:var(--cor-secundaria);
     transition: all ease-in-out .2s;
 }
 
 .redes i:hover{
-    color: lightskyblue;
+    color:var(--cor-primaria);
     
     
-}
-@keyframes flutando2 {
-    0%{
-        transform: translateY(0px);
-        color: lightskyblue;
-    }
-    50%{
-        transform: translateY(-1px);
-        color: lightskyblue;
-    }
-    100%{
-        transform: translateY(0px);
-        color: lightskyblue;
-    }
 }
 #menu-itens{ 
     width: auto;
@@ -76,12 +59,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:white;
+    color:var(--cor-secundaria);
     transition: all ease-in-out .2s;
     
 }
 .item:hover{
-    color: lightskyblue;
-    transform: ;
+    color:var(--cor-primaria);
+    transform:translateY(-5px) ;
 }
 

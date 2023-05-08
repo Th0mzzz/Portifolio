@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio-Th0mzzz</title>
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/reset.css" id="style">
     <link rel="stylesheet" href="styles/sobremim.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -38,6 +38,12 @@
                 <li><a class="item">Experiência</a></li>
                 <li><a class="item">Projetos</a></li>
             </ul>
+
+            <div id="modos">
+                <button id="toggle-btn" onclick=mudarCor()>
+                    Mudar modo
+                </button>
+            </div>
             
     </header>
     
@@ -47,7 +53,9 @@
             <div id="inicio">
                 <img id="saturn" src="imgs/Saturn-blue.png" alt="saturn">
                 <div id="title">
-                    <h2 id="cumprimento">Bom dia!</h2>
+
+                    <h2 id="cumprimento"></h2>
+                    
                     <h1 id="titulo">Thomaz Vasconcelos Mendes<br></h1>
                     <p>Desenvolvedor Web</p>
                 </div>
@@ -78,7 +86,7 @@
     <footer id="footer">
 
     </footer>
-    <script src="scripts/header.js" defer></script>
-    <script src="scripts/mode.js" defer></script>
+    <script src="scripts/cumprimento.js" defer></script>
+    <script src="scripts/modos.js"></script>
 </body>
 </html>
