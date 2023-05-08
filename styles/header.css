@@ -68,18 +68,25 @@ header{
     transform:translateY(-5px) ;
 }
 
-#toggle-btn{
-    color:var(--cor-primaria);
+#modos{
+    width:auto;
+    height:auto;
     border:solid 1px var(--cor-primaria);
-    background:transparent;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#toggle-btn::before{
+    content: '';
+    background:linear-gradient(to left, var(--cor-primaria), var(--cor-primaria-2));
+    width:0;
+    height:100%;
+    color:var(--cor-primaria);
     padding:2rem;
 }
-#toggle-btn:hover{
+#toggle-btn:hover::before{
     color:var(--cor-fundo);
+    width:100%;
     
-    
-}
-
-@keyframes encherbarra{
-
 }
