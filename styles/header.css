@@ -1,28 +1,31 @@
 header{
     position: fixed;
     top: 0;
-    width:100px;
-    height: 100vh;
+    width:100vw;
+    height: 80px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     background: #141414;
     justify-content: space-around;
     z-index: 1000;
     transition: all ease-in-out .3s;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.608);
+    overflow: hidden;
+    gap: 1rem;
 }
-
-
 #contatos{
     display:flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
     gap: .5rem;
     width: auto;
     height: 100%;
     padding: 1rem 3rem 1rem 3rem;
   
+}
+.redes:hover{
+    animation: flutando 1s infinite;
 }
 .redes a{
     text-decoration: none;
@@ -35,40 +38,50 @@ header{
 }
 
 .redes i:hover{
-    color: gold;
-    transform: translateY(-10px);
+    color: lightskyblue;
+    
+    
+}
+@keyframes flutando2 {
+    0%{
+        transform: translateY(0px);
+        color: lightskyblue;
+    }
+    50%{
+        transform: translateY(-1px);
+        color: lightskyblue;
+    }
+    100%{
+        transform: translateY(0px);
+        color: lightskyblue;
+    }
 }
 #menu-itens{ 
     width: auto;
     height:100%;
     list-style: none;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    font-size: 18px;
+    gap: 5rem;
+    font-size: 14px;
     cursor: pointer;
     
 }
+
 .item{
     text-decoration: none;
-    color:white;
-}
-#menu-itens li{
-    width: 100%;
-    height:50px ;
+    width: auto;
+    height:100%;
     display: flex;
     align-items: center;
     justify-content: center;
     color:white;
-    transition: all ease-in-out .1s;
+    transition: all ease-in-out .2s;
     
 }
-#menu-itens li:hover{ 
-    transform: translateY(-3px);
-    color: gold;
-}
 .item:hover{
-    color: gold;
+    color: lightskyblue;
+    transform: ;
 }
+
