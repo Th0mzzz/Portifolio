@@ -25,16 +25,14 @@ if(root.classList == 'light'){
     root.classList.add('light')
 }
 
+const icon = document.querySelectorAll('i');
 
-
-let emoji = document.getElementById('emoji');
-
-if( emoji == "&#x1F60E"){
-    emoji.innerHTML = "&#x1F634";
-
-}else{
-
-    emoji.innerHTML = "&#x1F60E";
+for (let i in icon) {
+    if (icon[i].classList.contains('active')) {
+        icon[i].classList.remove('active');
+    } else {
+        icon[i].classList.add('active');
+    }
 }
 
 
