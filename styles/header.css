@@ -68,25 +68,38 @@ header{
     transform:translateY(-5px) ;
 }
 
-#modos{
+#toggle-btn{
     width:auto;
-    height:auto;
-    border:solid 1px var(--cor-primaria);
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    height: fit-content;
+    padding:1rem;
+    border:solid 2px var(--cor-primaria);
+    position: relative;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
 }
+
+#toggle-btn > span {
+    text-shadow: 2px 4px #000;
+}
+   
 
 #toggle-btn::before{
     content: '';
-    background:linear-gradient(to left, var(--cor-primaria), var(--cor-primaria-2));
+    position: absolute;
+    top:0;
+    right:0;
+    background:linear-gradient(to right, var(--cor-primaria), var(--cor-primaria-2));
     width:0;
     height:100%;
     color:var(--cor-primaria);
-    padding:2rem;
+    z-index: -1;
+    
 }
 #toggle-btn:hover::before{
     color:var(--cor-fundo);
     width:100%;
+    transition: all .8s;
+    
     
 }
