@@ -25,15 +25,7 @@ if(root.classList == 'light'){
     root.classList.add('light')
 }
 
-const icon = document.querySelectorAll('i');
 
-for (let i in icon) {
-    if (icon[i].classList.contains('active')) {
-        icon[i].classList.remove('active');
-    } else {
-        icon[i].classList.add('active');
-    }
-}
 
 
 

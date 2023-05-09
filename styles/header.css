@@ -36,8 +36,6 @@ header{
 
 .redes i:hover{
     color:var(--cor-primaria);
-    
-    
 }
 #menu-itens{ 
     width: auto;
@@ -47,7 +45,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    font-size: 14px;
+    font-size: var(--medium-size);
     cursor: pointer;
     
 }

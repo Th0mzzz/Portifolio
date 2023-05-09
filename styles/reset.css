@@ -25,16 +25,30 @@ body{
 
 :root{
 
+/*Cores */
+
 --cor-primaria:#87cefa ;
 --cor-primaria-2:#9bd9ff;
 --cor-secundaria:#ffffff ;
 --cor-fundo:#141414 ;
 
+/*Fontes*/
+
+--title-size:28px;
+--subtitle-size:22px;
+--large-size:18px;
+--medium-size:15px;
+--small-size:12px;
+
 }
 
 
 :root.light {
-    --cor-fundo: 
+    --cor-primaria:#8C52FF;
+    --cor-primaria-2:#993399;
+    --cor-secundaria:#141414;
+    --cor-fundo:#FFFFE8;
+
     
 }
 
