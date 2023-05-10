@@ -14,18 +14,21 @@ if(root.classList == 'light'){
 
 // Alterando os icones do botão
 const icones = document.querySelectorAll('.icone');
-
-let icon1 = icones[0];
-let icon2 = icones[1];
+let saturn = document.getElementById('saturn');
 
 
-if(icon2.classList.contains('hidden')){
 
-    icon2.classList.remove('hidden');
-    icon1.classList.add('hidden');
+if(icones[0].classList.contains('hidden')){
+    saturn.src = 'imgs/Saturn-blue.png'
+    icones[0].classList.remove('hidden');
+    icones[1].classList.add('hidden');
+    
+    
 }else{
-    icon2.classList.add('hidden');
-    icon1.classList.remove('hidden');
+
+    icones[0].classList.add('hidden');
+    icones[1].classList.remove('hidden');
+    saturn.src = 'imgs/Saturn-purple.png'
 }
 
 //Alterando o src da img Saturn
