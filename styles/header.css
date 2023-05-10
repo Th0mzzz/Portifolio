@@ -45,7 +45,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    font-size: var(--medium-size);
+    font-size: var(--large-size);
     cursor: pointer;
     
 }
@@ -77,10 +77,6 @@ header{
     cursor: pointer;
 }
 
-#toggle-btn > span {
-    text-shadow: 2px 4px #000;
-}
-   
 
 #toggle-btn::before{
     content: '';
@@ -100,4 +96,16 @@ header{
     transition: all .8s;
     
     
+}
+
+.hidden{
+    display: none;
+}
+
+#btn-ul{
+    list-style: none;
+}
+.icone > i{
+    color:var(--cor-secundaria);
+    text-shadow: 1px 1px 3px black;
 }

@@ -1,22 +1,9 @@
+
 const botaocolor = document.getElementById("toggle-btn");
 
 function mudarCor(){
-/*const fundoValue = document.documentElement.style.getPropertyValue("--cor-fundo");
-    
-Solução-1
 
-if(fundoValue === "#141414"){
-    document.documentElement.style.setProperty("--cor-primaria", "#8C52FF");
-    document.documentElement.style.setProperty("--cor-primaria-2", "#9662ff");
-    document.documentElement.style.setProperty("--cor-secundaria", "#000000");
-}else{
-    document.documentElement.style.setProperty("--cor-primaria", "#87cefa");
-    document.documentElement.style.setProperty("--cor-secundaria", "#ffffff");
-    document.documentElement.style.setProperty("--cor-fundo", "#141414");
-}*/
-
-/*----Solução 2*/ 
-
+// Alterando a class do root para alterar as cores
 const root = document.querySelector(':root');
 
 if(root.classList == 'light'){
@@ -25,6 +12,23 @@ if(root.classList == 'light'){
     root.classList.add('light')
 }
 
+// Alterando os icones do botão
+const icones = document.querySelectorAll('.icone');
+
+let icon1 = icones[0];
+let icon2 = icones[1];
+
+
+if(icon2.classList.contains('hidden')){
+
+    icon2.classList.remove('hidden');
+    icon1.classList.add('hidden');
+}else{
+    icon2.classList.add('hidden');
+    icon1.classList.remove('hidden');
+}
+
+//Alterando o src da img Saturn
 
 
 
