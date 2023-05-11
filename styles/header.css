@@ -45,7 +45,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--large-size);
+    font-size: var(--medium-size);
     cursor: pointer;
     gap: 4rem;
     
