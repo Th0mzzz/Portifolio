@@ -31,14 +31,15 @@ body{
 --cor-primaria-2:#9bd9ff;
 --cor-secundaria:#ffffff ;
 --cor-fundo:#141414 ;
+--cor-fundo-2:#0d0d0d;
 
 /*Fontes*/
 
---title-size:30px;
---subtitle-size:25px;
---large-size:18px;
---medium-size:15px;
---small-size:12px;
+--title-size:35px;
+--subtitle-size:30px;
+--large-size:20px;
+--medium-size:18px;
+--small-size:14px;
 
 }
 
@@ -48,6 +49,7 @@ body{
     --cor-primaria-2:#993399;
     --cor-secundaria:#141414;
     --cor-fundo:#FFFFE8;
+    --cor-fundo-2:#fff2f2;
 
     
 }

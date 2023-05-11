@@ -58,7 +58,7 @@
 }
 #titulo{
     color:var(--cor-secundaria);
-    font-size: 32px;
+    font-size: var(--title-size);
     width: auto;
     height: auto;
     letter-spacing: 5px;
@@ -70,24 +70,17 @@
     width: 100%;
     height: auto;
     padding: 3rem;
-    background:#0d0d0d;
+    background:var(--cor-fundo-2);
 
 }
 #sobretit{ 
-   font-size:31px;
-   color:white;
-   
+   font-size:var(--subtitle-size);
+   color:var(--cor-primaria);
    border-bottom:solid 2px #993399;
    color: #993399;
-   width:50%;
 }
 
-#ola{
-    width: 50%;
-    display: flex;
-    padding: 2rem;
-    flex-direction: column;
-}
+
 #ola h2{
     font-size: 25px;
     color: gold;
