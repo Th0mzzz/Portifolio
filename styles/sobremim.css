@@ -76,7 +76,7 @@
 #sobretit{ 
    font-size:var(--subtitle-size);
    color:var(--cor-primaria);
-   border-bottom:solid 2px #993399;
+   border-bottom:solid 2px var(--cor-primaria);
    color: #993399;
 }
 
