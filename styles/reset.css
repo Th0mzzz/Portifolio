@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box; 
     font-family: 'Montserrat', sans-serif;
+    list-style: none;
 }
 body{
     background:var(--cor-fundo);
@@ -29,6 +30,7 @@ body{
 
 --cor-primaria:#87cefa ;
 --cor-primaria-2:#9bd9ff;
+--cor-primaria-alternativa:#8C52FF;
 --cor-secundaria:#ffffff ;
 --cor-fundo:#141414 ;
 --cor-fundo-2:#0d0d0d;
@@ -47,6 +49,7 @@ body{
 :root.light {
     --cor-primaria:#8C52FF;
     --cor-primaria-2:#993399;
+    --cor-primaria-alternativa:#87cefa;
     --cor-secundaria:#141414;
     --cor-fundo:#FFFFE8;
     --cor-fundo-2:#fff2f2;

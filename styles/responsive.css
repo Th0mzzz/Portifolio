@@ -1,23 +1,21 @@
-@media screen and (max-width:320px) {
+@media screen and (min-width:824px) {
 
-#menu-itens{ 
-    display: none;
+   
     
-}
-.item{
-    text-decoration: none;
-    width:auto;
-    height:auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:var(--cor-secundaria);
-    transition: all ease-in-out .2s;
-    
-    
-}
-
-.item:hover{
-    color: var(--cor-primaria-2);
-}
+    .item{
+        text-decoration: none;
+        width:auto;
+        height:auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:var(--cor-secundaria);
+        transition: all ease-in-out .2s;
+    }
+    .item:hover{
+        color: var(--cor-primaria-2);
+    }
+    .menu_burguer{
+        display:none ;
+    }
 }

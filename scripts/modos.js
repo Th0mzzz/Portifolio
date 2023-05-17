@@ -31,8 +31,6 @@ if(icones[0].classList.contains('hidden')){
     saturn.src = 'imgs/Saturn-purple.png'
 }
 
-//Alterando o src da img Saturn
-
 
 
 

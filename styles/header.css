@@ -3,15 +3,20 @@ header{
     top: 0;
     width:100vw;
     height: 80px;
+    background:var(--cor-fundo);
+    z-index: 1000;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.608);
+    overflow-x: hidden;
+    transition: background ease-in-out .3s;
+}
+.nav_container{
     display: flex;
     align-items: center;
-    background:var(--cor-fundo);
     justify-content: space-around;
-    z-index: 1000;
-    transition: all ease-in-out .3s;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.608);
-    overflow: hidden;
+    width:100%;
+    height:100%;
     gap: 1rem;
+    transition: all ease-in-out .3s;
 }
 #contatos{
     display:flex;
@@ -38,19 +43,26 @@ header{
     color:var(--cor-primaria);
 }
 #menu-itens{ 
-    position: relative;
-    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height:100%;
-    list-style: none;
-    display: flex;
+    gap: 4rem;
+    padding: 1rem;
+    display: none;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    font-size: var(--medium-size);
+    z-index: 3000;
     cursor: pointer;
-    gap: 4rem;
-    
+    background:rgba(255, 255, 255, 0.871);
+    font-size: var(--medium-size);
+    transition: all ease-in-out .5s;
 }
-
+#menu-itens li{
+    padding: 5px;
+}
 .item{
     text-decoration: none;
     width:auto;
@@ -60,26 +72,31 @@ header{
     justify-content: center;
     color:var(--cor-secundaria);
     transition: all ease-in-out .2s;
-    
+    white-space: nowrap;
     
 }
 
 .item:hover{
     color: var(--cor-primaria-2);
+    transform:rotate(-5deg);
 }
 
 #toggle-btn{
-    width:50px;
+    width:fit-content;
     height: fit-content;
-    padding:1rem;
-    border:solid 2px var(--cor-primaria);
+    padding:1rem;       
     position: relative;
     display: grid;
     place-items: center;
     cursor: pointer;
+    color:var(--cor-secundaria);
+   
 }
-
-
+#toggle-btn:hover{
+    color: var(--cor-primaria);
+    
+}
+/* 
 #toggle-btn::before{
     content: '';
     position: absolute;
@@ -98,8 +115,7 @@ header{
     transition: all .8s;
     
     
-}
-
+} */
 .hidden{
     display: none;
 }
@@ -108,6 +124,26 @@ header{
     list-style: none;
 }
 .icone > i{
-    color:var(--cor-secundaria);
-    text-shadow: 1px 1px 3px black;
+    transition: all ease-in-out .2s;
+    font-size: var(--large-size);
+}
+.icone > i:hover{
+    color: var(--cor-primaria);
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+.menu_burguer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background:transparent;
+    color: var(--cor-secundaria);
+    border-radius: 15px;
+    cursor: pointer;
+    transition:all ease-in-out .2s;
+    z-index: 3001;
 }

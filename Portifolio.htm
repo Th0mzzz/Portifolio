@@ -23,37 +23,43 @@
 
     
     <header id="header">  
-        <ul id="contatos">
-            <li class="redes">
-                <a href="https://github.com/Th0mzzz"><i class="devicon-github-original"></i></a>                   
+            <nav class="nav_container">
+
+                <ul id="contatos">
+                    <li class="redes">
+                        <a href="https://github.com/Th0mzzz"><i class="devicon-github-original"></i></a>                   
+                            
+                        </a></li> 
+                    <li class="redes">
+                        <a href="https://www.linkedin.com/in/thomaz-vasconcelos-mendes-027388268/">                                     
+                            <i class="devicon-linkedin-plain"></i>       
+                        </a></li>
+                </ul>  
                     
-                </a></li> 
-            <li class="redes">
-                <a href="https://www.linkedin.com/in/thomaz-vasconcelos-mendes-027388268/">                                     
-                    <i class="devicon-linkedin-plain"></i>       
-                 </a></li>
-        </ul>  
-            
-            <ul id="menu-itens">
-                <li><a class="item" href="#saturn" top>Home</a></li>
-                <li><a class="item" href="#sobremim">Sobre mim</a></li>
-                <li><a class="item">Habilidades</a></li>
-                <li><a class="item">Experiência</a></li>
-                <li><a class="item">Projetos</a></li>
-            </ul>
+                    <ul id="menu-itens">
+                        <li><a class="item" href="#sobremim">Sobre mim</a></li>
+                        <li><a class="item">Habilidades</a></li>
+                        <li><a class="item">Experiência</a></li>
+                        <li><a class="item">Projetos</a></li>
+                    </ul>
+                        <div class="right-nav">
+                            <div id="toggle-btn" onclick=mudarCor()>
+                            <ul id="btn-ul">
+                                <li class="icone "><i class="fa-solid fa-sun" ></i></li>
+                                <li class="icone hidden"><i class="fa-solid fa-moon"></i></li>
+                            </ul>
+                            </div>
 
-                <div id="toggle-btn" onclick=mudarCor()>
-                <ul id="btn-ul">
-                    <li class="icone "><i class="fa-solid fa-sun" ></i></li>
-                    <li class="icone hidden"><i class="fa-solid fa-moon"></i></li>
-                </ul>
-                </div>
-
+                            <ul class="menu_burguer">    
+                                <li class="icone burguer"><i class="fa-solid fa-bars"></i></li>
+                                <li class="icone burguer hidden"><i class="fa-solid fa-xmark"></i></li>
+                        </div>
+                </nav>
             
     </header>
     
     <main id="main">
-
+        
         <section id="separ">
             <div id="inicio">
                 <img id="saturn" src="imgs/Saturn-blue.png" alt="saturn">
