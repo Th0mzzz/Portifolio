@@ -7,8 +7,11 @@ header{
     z-index: 1000;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.608);
     overflow-x: hidden;
-    transition: background ease-in-out .3s;
+    
 }
+
+
+/*NAV - CONTAINER */
 .nav_container{
     display: flex;
     align-items: center;
@@ -18,6 +21,8 @@ header{
     gap: 1rem;
     transition: all ease-in-out .3s;
 }
+
+/* CONTATOS */
 #contatos{
     display:flex;
     align-items: center;
@@ -42,6 +47,9 @@ header{
 .redes i:hover{
     color:var(--cor-primaria);
 }
+
+
+/* Itens do menu */
 #menu-itens{ 
     position: fixed;
     top: 0;
@@ -56,12 +64,14 @@ header{
     align-items: center;
     z-index: 3000;
     cursor: pointer;
-    background:rgba(255, 255, 255, 0.871);
+    background:var(--cor-fundo-alternativa);
     font-size: var(--medium-size);
     transition: all ease-in-out .5s;
+    backdrop-filter: blur(10px);
+    
 }
 #menu-itens li{
-    padding: 5px;
+    padding:.5rem;
 }
 .item{
     text-decoration: none;
@@ -70,17 +80,23 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:var(--cor-secundaria);
+    color:var(--cor-secundaria-2);
     transition: all ease-in-out .2s;
     white-space: nowrap;
-    
 }
 
 .item:hover{
     color: var(--cor-primaria-2);
-    transform:rotate(-5deg);
 }
 
+
+
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+
+/* Botão de modo claro e escuro */
 #toggle-btn{
     width:fit-content;
     height: fit-content;
@@ -130,10 +146,10 @@ header{
 .icone > i:hover{
     color: var(--cor-primaria);
 }
-.right-nav{
-    display: flex;
-    align-items: center;
-}
+
+
+/* Menu mobile */
+
 .menu_burguer{
     display:flex;
     align-items: center;
@@ -147,3 +163,14 @@ header{
     transition:all ease-in-out .2s;
     z-index: 3001;
 }
+
+@keyframes flutando {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }}
